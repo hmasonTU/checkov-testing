@@ -1,0 +1,4 @@
+name: Checkov Github Action
+on: [push]
+runs-on: ubuntu-latest
+uses: bridgecrewio/checkov-action@v13
