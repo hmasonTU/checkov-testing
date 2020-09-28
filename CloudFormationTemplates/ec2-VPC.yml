@@ -545,10 +545,12 @@ Resources:
           FromPort: '22'
           ToPort: '22'
           CidrIp: !Ref SSHLocation
+          Description: example
         - IpProtocol: tcp
           FromPort: '80'
           ToPort: '80'
           CidrIp: 0.0.0.0/0
+          Description: example
   WebServerInstance:
     Type: 'AWS::EC2::Instance'
     DependsOn: AttachGateway
