@@ -15,7 +15,7 @@ jobs:
     - name: Run Checkov action
       uses: bridgecrewio/checkov-action@v13
       with:
-        directory: example/
+        directory: CloudFormationTemplates/
         skip_check:
         quiet:
         framework:
