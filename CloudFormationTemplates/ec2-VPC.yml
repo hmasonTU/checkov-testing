@@ -549,6 +549,7 @@ Resources:
           FromPort: '80'
           ToPort: '80'
           CidrIp: 0.0.0.0/0
+          description: example
   WebServerInstance:
     Type: 'AWS::EC2::Instance'
     DependsOn: AttachGateway
