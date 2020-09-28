@@ -5,15 +5,20 @@ on:
     branches: [ master ]
   
 jobs:
-  test_pull_request:
+  checkov-job:
     runs-on: ubuntu-latest
+    name: Checkov Github Action
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - run: npm ci
-      - run: npm test
-      - run: npm run build
+    - name: Checkout repo
+      uses: actions/checkout@master
+
+    - name: Run Checkov action
+      uses: bridgecrewio/checkov-action@v13
+      with:
+        directory: example/
+        skip_check:
+        quiet:
+        framework:
+
   
     
