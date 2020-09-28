@@ -369,6 +369,7 @@ Resources:
           - Arch
   InstanceSecurityGroup:
     Type: 'AWS::EC2::SecurityGroup'
+    Description: Example
     Properties:
       GroupDescription: Enable SSH access via port 22
       SecurityGroupIngress:
