@@ -16,9 +16,9 @@ jobs:
       uses: bridgecrewio/checkov-action@v13
       with:
         directory: CloudFormationTemplates/
-        skip_check:
+        skip_check: CKV_AWS_23
         quiet:
-        framework:
+        framework: cloudformation
 
   
     
