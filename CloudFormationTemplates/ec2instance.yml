@@ -369,7 +369,6 @@ Resources:
           - Arch
   InstanceSecurityGroup:
     Type: 'AWS::EC2::SecurityGroup'
-    Description: Example
     Properties:
       GroupDescription: Enable SSH access via port 22
       SecurityGroupIngress:
@@ -377,6 +376,7 @@ Resources:
           FromPort: '22'
           ToPort: '22'
           CidrIp: !Ref SSHLocation
+          Description: Example
 Outputs:
   InstanceId:
     Description: InstanceId of the newly created EC2 instance
