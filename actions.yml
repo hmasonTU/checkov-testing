@@ -1,4 +1,1 @@
-name: test
-on: [push]
-runs-on: ubuntu-latest
-uses: bridgecrewio/checkov-action@v13
+testdkjdkaij
