@@ -545,6 +545,7 @@ Resources:
           FromPort: '22'
           ToPort: '22'
           CidrIp: !Ref SSHLocation
+          description: example
         - IpProtocol: tcp
           FromPort: '80'
           ToPort: '80'
